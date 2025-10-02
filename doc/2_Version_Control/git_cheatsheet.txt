@@ -17,7 +17,7 @@ git rebase:
 git fetch:
     downloads files from the remote directory
 git add
-    adds files to be recognized by git before committing
+    adds files to be commited by git before committing
 git status
     shows files that were changed
 git log
