@@ -9,9 +9,18 @@ git pull:
     downloads and merges files from the remote directory
 git push:
     uploads files to remote directory
+    -u <remote> <branch> must be used the first time to let it know what repository and branch to push to.
 git merge:
     takes branch and combines it with the HEAD (usually main)
 git rebase:
     takes head and changes the parents
 git fetch:
     downloads files from the remote directory
+git add
+    adds files to be recognized by git before committing
+git status
+    shows files that were changed
+git log
+    shows all previous activity and current head position
+git diff
+    shows what changed in the files
