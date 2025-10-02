@@ -1,0 +1,17 @@
+git commit:
+    uploads and marks changes made
+git branch:
+    creates a new branch (git branch <name>)
+    -f branches then checkout that branch (git branch -f <name>)
+git checkout:
+    moves HEAD to branch or commit
+git pull:
+    downloads and merges files from the remote directory
+git push:
+    uploads files to remote directory
+git merge:
+    takes branch and combines it with the HEAD (usually main)
+git rebase:
+    takes head and changes the parents
+git fetch:
+    downloads files from the remote directory
