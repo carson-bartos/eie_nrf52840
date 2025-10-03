@@ -23,4 +23,4 @@ git status
 git log
     shows all previous activity and current head position
 git diff
-    shows what changed in the files
+    shows what was changed in the files!
