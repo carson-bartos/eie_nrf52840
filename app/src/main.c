@@ -55,23 +55,36 @@ int main(void) {
     }
 
 
-    int alternate = 0;
+    int count = 0;
     while (1) {
-
-        if (alternate == 0){
-
-            gpio_pin_toggle_dt(&led0);
-            gpio_pin_toggle_dt(&led1);
-            gpio_pin_toggle_dt(&led2);
-            alternate = 1;
-        }
-        else
+    
+        switch (count)
         {
-            alternate = 0;
-        }
+        case 0:
+            /* code */
+            gpio_pin_set_dt(&led3, 0);
+            gpio_pin_set_dt(&led0, 1);
+            break;
+        case 1:
+            gpio_pin_set_dt(&led0, 0);
+            gpio_pin_set_dt(&led1, 1);
+            break;
+        case 2:
+            gpio_pin_set_dt(&led1, 0);
+            gpio_pin_set_dt(&led2, 1);
+            break;
+        case 3:
+            gpio_pin_set_dt(&led2, 0);
+            gpio_pin_set_dt(&led3, 1);
+            count = 0;
+            break;
         
-        gpio_pin_toggle_dt(&led3);
-
+        default:
+            break;
+        }
+        count++;
+        if (count == 4)
+            count = 0;
         k_msleep(500);
     }
 
