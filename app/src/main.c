@@ -62,7 +62,7 @@ int main(void) {
         {
         case 0:
             /* code */
-            gpio_pin_set_dt(&led3, 0);
+            gpio_pin_set_dt(&led2, 0);
             gpio_pin_set_dt(&led0, 1);
             break;
         case 1:
@@ -71,12 +71,11 @@ int main(void) {
             break;
         case 2:
             gpio_pin_set_dt(&led1, 0);
-            gpio_pin_set_dt(&led2, 1);
+            gpio_pin_set_dt(&led3, 1);
             break;
         case 3:
-            gpio_pin_set_dt(&led2, 0);
-            gpio_pin_set_dt(&led3, 1);
-            count = 0;
+            gpio_pin_set_dt(&led3, 0);
+            gpio_pin_set_dt(&led2, 1);
             break;
         
         default:
