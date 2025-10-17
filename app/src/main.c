@@ -21,13 +21,16 @@ int main(void) {
  if(0 > LED_init()){
   return 0;
  }
-
+  int counter = 0;
   while(1) {
     if (BTN_check_clear_pressed(BTN0)){
-      LED_toggle(LED0);
-      printk("Button 0 pressed!\n");
+      counter++;
+      printk("Button 0 pressed!%d\n", counter);
     }
     k_msleep(SLEEP_MS);
+
+    
+
   }
 	return 0;
 }
