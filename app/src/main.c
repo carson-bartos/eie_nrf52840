@@ -29,7 +29,10 @@ int main(void) {
     }
     k_msleep(SLEEP_MS);
 
-    
+    LED_set(LED0, counter & 1);
+    LED_set(LED1, (counter / 2) & 1);
+    LED_set(LED2, (counter / 4) & 1);
+    LED_set(LED3, (counter / 8) & 1);
 
   }
 	return 0;
